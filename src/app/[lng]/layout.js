@@ -43,7 +43,17 @@ export async function generateMetadata({ params }) {
 export default async function RootLayout({ children, params: { lng = "es" } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
-      <head />
+      <head>
+        <script
+          type="text/javascript"
+          data-cmp-ab="1"
+          src="https://cdn.consentmanager.net/delivery/autoblocking/ae84401322aa0.js"
+          data-cmp-host="b.delivery.consentmanager.net"
+          data-cmp-cdn="cdn.consentmanager.net"
+          data-cmp-codesrc="16"
+          async
+        ></script>
+      </head>
       <GoogleTagManager gtmId={"GTM-WSZKMS27"} />
       <body>
         <QCProvider>
