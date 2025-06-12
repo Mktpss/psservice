@@ -44,7 +44,7 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head>
-        <script
+    { /* <script
           type="text/javascript"
           data-cmp-ab="1"
           src="https://cdn.consentmanager.net/delivery/autoblocking/ae84401322aa0.js"
@@ -53,6 +53,7 @@ export default async function RootLayout({ children, params: { lng = "es" } }) {
           data-cmp-codesrc="16"
           async
         ></script>
+        */}
       </head>
       <GoogleTagManager gtmId={"GTM-WSZKMS27"} />
       <body>
